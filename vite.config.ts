@@ -16,13 +16,7 @@ export default defineConfig((config) => {
     define: {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     },
-    server: {
-  host: true,
-  allowedHosts: [
-    'localhost',
-    '*'
-  ]
-    }, 
+    server: true, 
     build: {
       target: 'esnext',
     },
